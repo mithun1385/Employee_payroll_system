@@ -177,19 +177,15 @@ annotate service.Deductions with @(
     UI.LineItem #Deduction : [
         {
             $Type : 'UI.DataField',
-            Value : deductionAction,
-            Label : 'deductionAction',
+            Value : deductionAmount,
+            Label : 'deductionAmount',
         },
         {
             $Type : 'UI.DataField',
             Value : reason,
             Label : 'reason',
         },
-        {
-            $Type : 'UI.DataField',
-            Value : employee_ID,
-            Label : 'employee_ID',
-        },
+    
     ]
 );
 
@@ -200,11 +196,7 @@ annotate service.Bonuses with @(
             Value : bonusAmount,
             Label : 'bonusAmount',
         },
-        {
-            $Type : 'UI.DataField',
-            Value : employee_ID,
-            Label : 'employee_ID',
-        },
+  
     ]
 );
 
