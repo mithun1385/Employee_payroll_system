@@ -10,6 +10,17 @@ entity Employees : cuid {
     department  : String(50);
     attendances : Association to many Attendances
                       on attendances.employee = $self;
+    leaves      : Association to many Leaves
+                      on leaves.employee = $self;
+
+    bonuses     : Association to many Bonuses
+                      on bonuses.employee = $self;
+
+    deductions  : Association to many Deductions
+                      on deductions.employee = $self;
+
+    payrolls    : Association to many payrolls
+                      on payrolls.employee = $self;
 }
 
 entity Attendances : cuid {

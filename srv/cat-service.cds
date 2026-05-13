@@ -1,7 +1,7 @@
 using {employee as db} from '../db/schema';
 
 service employeeSerice {
-
+    @odata.draft.enabled
     entity employee    as projection on db.Employees;
     entity Attendances as projection on db.Attendances;
     entity Leaves      as projection on db.Leaves;
