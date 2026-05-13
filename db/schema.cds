@@ -48,7 +48,7 @@ entity Bonuses : cuid {
 }
 
 entity Deductions : cuid {
-    deductionAction : Decimal(10, 2);
+    deductionAmount : Decimal(10, 2);
     reason          : String(55);
     employee        : Association to Employees;
 }

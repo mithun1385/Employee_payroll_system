@@ -11,9 +11,6 @@ module.exports = class employeeSerice extends cds.ApplicationService { init() {
   return super.init()
 }}
 
-
-
-
   // this.before (['CREATE', 'UPDATE'], employee, async (req) => {
   //   console.log('Before CREATE/UPDATE employee', req.data)
   // })
@@ -44,4 +41,3 @@ module.exports = class employeeSerice extends cds.ApplicationService { init() {
   // this.after ('READ', Deductions, async (deductions, req) => {
   //   console.log('After READ Deductions', deductions)
   // })
-
